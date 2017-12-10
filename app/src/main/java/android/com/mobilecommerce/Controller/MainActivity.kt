@@ -5,7 +5,6 @@ import android.com.mobilecommerce.R
 import android.com.mobilecommerce.Services.DataService
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +15,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         adapter = CategoryAdapter(this, DataService.categories)
+     //   categoryListView.adapter = adapter
 
-        categoryListView.adapter = adapter
+
+
     }
 }
